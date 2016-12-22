@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ninja To Cat jQuery Practice</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('img').click(function(){
+        if($(this).attr('src')===($(this).attr('alt-src'))){
+          $(this).attr('src', $(this).attr('data-alt-src'))
+        }
+        else($(this).attr('src', $(this).attr('alt-src')));
+      })
+    })
+  </script>
+  <style>
+  img{
+    display: block;
+    margin-bottom: 1px;
+  }
+  </style>
+</head>
+<body>
+  <img class="bar" src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja0.png" data-alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/cat0.png" alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja0.png">
+  <img class="bar" src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja1.png" data-alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/cat1.png" alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja1.png">
+  <img class="bar" src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja2.png" data-alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/cat2.png" alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja2.png">
+  <img class="bar" src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja3.png" data-alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/cat3.png" alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja3.png">
+  <img class="bar" src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja4.png" data-alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/cat4.png" alt-src="/Users/joshbuttram/documents/codingdojofiles/jQuery/ninja_cat/img/ninja4.png">
+</body>
+</html>
